@@ -1,0 +1,240 @@
+<!DOCTYPE html><html><head><title>AIセントラルな組織設計（2） - 解決案の全体像 - blog.unhappychoice.com</title><meta content="text/html; charset=UTF-8" http-equiv=Content-Type /><meta charset=utf-8 /><meta content="IE=edge;chrome=1" http-equiv=X-UA-Compatible /><meta content="width=device-width, initial-scale=1" name=viewport /><meta property="og:title" content="AIセントラルな組織設計（2） - 解決案の全体像 - blog.unhappychoice.com"/> <meta property="og:type" content=article /> <meta property="og:url" content="https://blog.unhappychoice.com/articles/2025-08-29-ai-centric-organization-2.html"/> <meta property="og:image" content="https://blog.unhappychoice.com/images/ogp/2025-08-29-ai-centric-organization-2.png"/> <meta property="og:description" content="AIをコミュニケーションハブとする組織設計の全体像。人間同士の直接やり取りに代わる、新しい情報流通の仕組み。"/> <meta name="twitter:card" content=summary_large_image /> <meta name="twitter:site" content="@unhappychoice"/> <meta name="twitter:title" content="AIセントラルな組織設計（2） - 解決案の全体像 - blog.unhappychoice.com"/> <meta name="twitter:description" content="AIをコミュニケーションハブとする組織設計の全体像。人間同士の直接やり取りに代わる、新しい情報流通の仕組み。"/> <meta name="twitter:image" content="https://blog.unhappychoice.com/images/ogp/2025-08-29-ai-centric-organization-2.png"/><link rel=alternate type="application/atom+xml" title="Atom Feed" href="/feed.xml"/><link crossorigin=anonymous href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap-reboot.min.css" integrity="sha512-gl/07tE1atRY5leOa5GtQa/pclV529xEP5cDTIdU1rj7vDh4KKz3nHrP7DsTBx3F++ihOqZGdcRTfOvrU/JF4g==" rel=stylesheet /><link href="//fonts.googleapis.com/css?family=Noto+Sans+JP:400,500|Rubik:400,500&amp;amp;subset=japanese" media=screen rel=stylesheet /><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel=stylesheet /><style>.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+  font-style: italic;
+}
+.highlight .cm {
+  color: #75715e;
+  font-style: italic;
+}
+.highlight .c1 {
+  color: #75715e;
+  font-style: italic;
+}
+.highlight .cp {
+  color: #75715e;
+  font-weight: bold;
+}
+.highlight .cs {
+  color: #75715e;
+  font-weight: bold;
+  font-style: italic;
+}
+.highlight .err {
+  color: #960050;
+  background-color: #1e0010;
+}
+.highlight .gi {
+  color: #ffffff;
+  background-color: #324932;
+}
+.highlight .gd {
+  color: #ffffff;
+  background-color: #493131;
+}
+.highlight .ge {
+  color: #000000;
+  font-style: italic;
+}
+.highlight .gr {
+  color: #aa0000;
+}
+.highlight .gt {
+  color: #aa0000;
+}
+.highlight .gh {
+  color: #999999;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+  font-weight: bold;
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .k, .highlight .kv {
+  color: #66d9ef;
+  font-weight: bold;
+}
+.highlight .kc {
+  color: #66d9ef;
+  font-weight: bold;
+}
+.highlight .kd {
+  color: #66d9ef;
+  font-weight: bold;
+}
+.highlight .kp {
+  color: #66d9ef;
+  font-weight: bold;
+}
+.highlight .kr {
+  color: #66d9ef;
+  font-weight: bold;
+}
+.highlight .kt {
+  color: #66d9ef;
+  font-weight: bold;
+}
+.highlight .kn {
+  color: #f92672;
+  font-weight: bold;
+}
+.highlight .ow {
+  color: #f92672;
+  font-weight: bold;
+}
+.highlight .o {
+  color: #f92672;
+  font-weight: bold;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .sa {
+  color: #66d9ef;
+  font-weight: bold;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sc {
+  color: #e6db74;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .sr {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .ss {
+  color: #e6db74;
+}
+.highlight .s, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+  font-weight: bold;
+}
+.highlight .nd {
+  color: #a6e22e;
+  font-weight: bold;
+}
+.highlight .ne {
+  color: #a6e22e;
+  font-weight: bold;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+  font-weight: bold;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .bp {
+  color: #f8f8f2;
+}
+.highlight .nb {
+  color: #f8f8f2;
+}
+.highlight .ni {
+  color: #f8f8f2;
+}
+.highlight .nn {
+  color: #f8f8f2;
+}
+.highlight .vc {
+  color: #f8f8f2;
+}
+.highlight .vg {
+  color: #f8f8f2;
+}
+.highlight .vi {
+  color: #f8f8f2;
+}
+.highlight .nv, .highlight .vm {
+  color: #f8f8f2;
+}
+.highlight .w {
+  color: #f8f8f2;
+}
+.highlight .nl {
+  color: #f8f8f2;
+  font-weight: bold;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight {
+  color: #f8f8f2;
+  background-color: #49483e;
+}</style><link href="/stylesheets/all.css" rel=stylesheet /><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script><script async src="https://www.googletagmanager.com/gtag/js?id=G-8T9HKZQWWX"></script> <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8T9HKZQWWX');
+</script> <script>window.MathJax = {
+  loader: { load: ['[tex]/amscd'] },
+  tex: {
+    packages: { '[+]': ['amscd'] },
+    macros: {
+      cats: ["{\\mathcal{#1}}", 1],
+      catl: ["{\\mathbf{#1}}", 1],
+      set: ["{\\mathbb{#1}}", 1],
+      id: ["{\\mathbf{id}_{#1}}", 1],
+      functor: ["{\\mathbf{#1}}", 1],
+      bold: ["{\\bf #1}", 1]
+    }
+  },
+  "HTML-CSS": {
+    availableFonts: [],
+    preferredFont: null,
+    webFont: "Neo-Euler",
+    undefinedFamily: "'Noto Sans Japanese', sans-seif",
+    mtextFontInherit: true
+  }
+};</script><script id=MathJax-script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script src="/javascripts/all.js"></script></head><body><main id=main role=main><div class=social-share-buttons><div class="social-share-button hatena"><a href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3A%2F%2Fblog.unhappychoice.com%2F2025%2F08%2F29%2Fai-centric-organization-2.html&title=AIセントラルな組織設計（2） - 解決案の全体像" rel=noopener target=_blank><div class=icon>B!</div><div class=text>はてな</div></a></div><div class="social-share-button twitter"><a href="https://twitter.com/intent/tweet?text=AIセントラルな組織設計（2） - 解決案の全体像&url=https%3A%2F%2Fblog.unhappychoice.com%2F2025%2F08%2F29%2Fai-centric-organization-2.html" rel=noopener target=_blank><div class=icon>𝕏</div><div class=text>X (Twitter)</div></a></div><div class="social-share-button facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fblog.unhappychoice.com%2F2025%2F08%2F29%2Fai-centric-organization-2.html" rel=noopener target=_blank><div class=icon>f</div><div class=text>Facebook</div></a></div></div><div class=content><h1 class=heading><img class=heading__image src="https://secure.gravatar.com/avatar/d75911a871edff466e3f05b152150be1?s=100"/><div class=heading__icons><a href="https://unhappychoice.com" rel=noopener target=_blank><span class="fa fa-home"></span></a><a href="https://github.com/unhappychoice" rel=noopener target=_blank><span class="fa fa-github"></span></a><a href="https://www.facebook.com/profile.php?id=100008274691739" rel=noopener target=_blank><span class="fa fa-facebook-square"></span></a><a href="https://www.linkedin.com/in/unhappychoice" rel=noopener target=_blank><span class="fa fa-linkedin"></span></a></div>blog.unhappychoice.com</h1><ol class=breadcrumb><li><a href="/">TOP</a></li><li><a href="../../../2025.html">2025年</a></li><li><a href="../../08.html">8月</a></li><li><a href="../29.html">29日</a></li><li>AIセントラルな組織設計（2） - 解決案の全体像</li></ol><article class=article><h2 class=article__title>AIセントラルな組織設計（2） - 解決案の全体像</h2><div class=meta><div class=time><span class="fa fa-clock-o"></span>2025-08-29</div><div class=tags><div class=tag><span class="fa fa-tag"></span><a href="../../../tags/philosophy.html">philosophy </a></div></div></div><div class=article__content><p>従来型組織の限界を受けて、AIをコミュニケーションハブとする組織設計を考えてみる。</p> <p>単なる効率化ではなく、組織の情報流通構造そのものを変えるものとして。</p> <p></p> <h2>基本的な構造</h2> <p>AIセントラル組織の核となる発想は単純で、</p> <p>人間同士が直接やり取りするのではなく、ほぼ全てのコミュニケーションをAIが仲介する。</p> <ul> <li>人間はAIに話しかける</li> <li>AIが内容を理解・整理する</li> <li>AIが適切な相手に適切な形、適切なタイミングで伝える</li> </ul> <p>これにより、従来の「人 vs 人」の構造から「人 -&gt; AI -&gt; 人」の構造へと変わる。</p> <p>重要なのは、AIが各個人のコミュニケーション志向に合わせてアダプターとして機能することだ。 同じ情報でも、ある人には要点を箇条書きで、別の人には図解で、また別の人には音声要約で配信する。</p> <h2>具体的にどう変わるか</h2> <h3>コミュニケーション方法</h3> <p>個人が好みの方法を利用できる。 例えば、対面を好めば AI のアバターとビデオ通話できるし、何か作業をしながら情報を取得したければ、ラジオ形式で重要な情報を入手できる。 非同期なチャットはもちろんできるし、AIは24時間いつでもどこでも双方向なやりとりを提供する。</p> <h3>情報探索</h3> <p>新人が「この仕様ってどう決まったんですか？」と聞けば、AIは「◯月の会議で議論され、この結論になった」と即答する。</p> <h3>タスクとロードマップ</h3> <p>AIがログを収集し、自動的に最新化。 「今取り組むべきことは？」と聞けば即答が返り、「どちらを優先すべき？」と問えばPM役として合理的に判断してくれる。</p> <h3>セキュリティと透明性</h3> <p>AIがアクセス制御を担うことで、人間由来の「うっかり」や「愚痴漏洩」が減る。 全ログが残るため、むしろトレーサビリティや透明性は高まる。</p> <h2>従来組織の問題がどう解決されるか</h2> <table><thead> <tr> <th>従来の問題</th> <th>AIセントラルでの解決</th> </tr> </thead><tbody> <tr> <td>認知負荷</td> <td>AIが情報を整理・要約して配信</td> </tr> <tr> <td>感情摩擦</td> <td>AIが客観的に内容を伝達、個々人の好みの表現をしてくれる</td> </tr> <tr> <td>属人化</td> <td>全ての知識がAIに蓄積される</td> </tr> <tr> <td>セキュリティリスク</td> <td>AIによる統制されたアクセス管理</td> </tr> <tr> <td>直接対話による情報の漏れ</td> <td>全てのやり取りがログとして保存・検索可能</td> </tr> <tr> <td>コミュニケーション志向の画一化</td> <td>AIが個人の志向に合わせて形式を変換・配信</td> </tr> <tr> <td>規模の限界</td> <td>AIハブで無制限にスケール可能</td> </tr> </tbody></table> <h2>組織論との整合性</h2> <p>チェスター・バーナードは『経営者の役割』<sup id=fnref1><a href="#fn1">1</a></sup>で、組織が成立するための三要素を定義した：</p> <blockquote> <p>「協働体系が存続するためには、（１）伝達（コミュニケーション）、（２）貢献意欲、（３）共通目的、という三つの要素が不可欠である」</p> </blockquote> <p>AIセントラル設計は、この古典的な組織論とも整合し、むしろ三要素を強化する。</p> <h3>共通目的（Purpose）の透明化</h3> <p>従来は上層部で決定された目的が下位層に「伝達」されていた。 AIセントラルでは、全ログが意味レイヤで整理され、目的に至る論拠・議論過程も含めて全員に透明に共有される。 「なぜその目的なのか」まで理解できるため、より強固な合意が形成される。</p> <h3>貢献意欲（Willingness）の持続</h3> <p>従来は組織の様式に個人が合わせる必要があった。 AIセントラルでは、個人のペースや志向（同期/非同期、文字/音声など）に組織が合わせる。 無理な適応を強いられないため、長期的な貢献意欲を維持しやすい。</p> <h3>コミュニケーション（Communication）の精度向上</h3> <p>従来は人間同士の直接やり取りで摩擦や誤解が発生していた。 AI仲介により感情的な摩擦が減り、意味の伝達精度が向上する。 同時に、全てのやり取りが記録されるため、後からの検証も可能になる。</p> <h2>変化の方向性</h2> <p>このような組織設計が実際にどのような仕組みで動作し、どのように実装されていくのか。 次回は具体的な実装の姿と理論的な背景を詳しく考えてみる。</p> <div class=footnotes> <hr> <ol> <li id=fn1> <p><a href="https://www.amazon.co.jp/dp/4641088926">チェスター・バーナード『新訳 経営者の役割』</a>&nbsp;<a href="#fnref1">&#8617;</a></p> </li> </ol> </div> </div></article><div class=paginator><div class=paginator__prev><a href="../28/ai-centric-organization-1.html">古い記事へ</a></div><div class=paginator__next><a href="../30/ai-centric-organization-3.html">新しい記事へ</a></div></div></div></main><aside id=sidebar><h3>最近の記事</h3><ol><li><a href="../31/ai-centric-organization-4.html">AIセントラルな組織設計（4） - 資本主義的必然性</a></li><li><a href="../30/ai-centric-organization-3.html">AIセントラルな組織設計（3） - 具体的な実装設計</a></li><li><a href="ai-centric-organization-2.html">AIセントラルな組織設計（2） - 解決案の全体像</a></li><li><a href="../28/ai-centric-organization-1.html">AIセントラルな組織設計（1） - 従来型組織の限界</a></li><li><a href="../09/things-i-did-in-previous-career-break.html">前の無職期間にしていたこと</a></li><li><a href="../01/passive-active.html">受動的な能動UXを考える</a></li><li><a href="../../07/17/infinity-nikki.html">インフィニティニキでポートレート撮った話</a></li><li><a href="../../../2023/10/17/desk-environment.html">デスク環境の変遷</a></li><li><a href="../../../2021/07/12/searching-lyric.html">iOSのショートカットで１タップ歌詞検索</a></li><li><a href="../../../2020/11/04/latex-syntax.html">記事内でTex入力できるようにした</a></li></ol><h3>タグ</h3><ol><li><a href="/tags/programming.html"><span class=badge>15</span>programming</a></li><li><a href="/tags/github.html"><span class=badge>9</span>github</a></li><li><a href="/tags/philosophy.html"><span class=badge>6</span>philosophy</a></li><li><a href="/tags/others.html"><span class=badge>5</span>others</a></li><li><a href="/tags/what-i-know.html"><span class=badge>4</span>what_i_know</a></li><li><a href="/tags/gaming.html"><span class=badge>2</span>gaming</a></li><li><a href="/tags/liquor.html"><span class=badge>1</span>liquor</a></li><li><a href="/tags/release.html"><span class=badge>1</span>release</a></li><li><a href="/tags/singing.html"><span class=badge>1</span>singing</a></li><li><a href="/tags/category-theory.html"><span class=badge>1</span>category_theory</a></li><li><a href="/tags/tips.html"><span class=badge>1</span>tips</a></li></ol><h3>年別</h3><ol><li><a href="/2025.html"><span class=badge>7</span>2025年</a></li><li><a href="/2023.html"><span class=badge>1</span>2023年</a></li><li><a href="/2021.html"><span class=badge>1</span>2021年</a></li><li><a href="/2020.html"><span class=badge>5</span>2020年</a></li><li><a href="/2019.html"><span class=badge>7</span>2019年</a></li><li><a href="/2018.html"><span class=badge>1</span>2018年</a></li><li><a href="/2017.html"><span class=badge>6</span>2017年</a></li><li><a href="/2016.html"><span class=badge>3</span>2016年</a></li></ol></aside></body></html>
