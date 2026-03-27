@@ -5,10 +5,162 @@
   <id>https://blog.unhappychoice.com</id>
   <link href="https://blog.unhappychoice.com"/>
   <link href="https://blog.unhappychoice.com/feed.xml" rel="self"/>
-  <updated>2025-08-31T00:00:00+09:00</updated>
+  <updated>2026-03-27T00:00:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>今の無職期間にしていること</title>
+    <link rel="alternate" href="https://blog.unhappychoice.com/2026/03/27/oss-2025-2026.html"/>
+    <id>https://blog.unhappychoice.com/2026/03/27/oss-2025-2026.html</id>
+    <published>2026-03-27T00:00:00+09:00</published>
+    <updated>2026-03-27T00:00:00+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <media:content url="https://blog.unhappychoice.com/images/ogp/2026-03-27-oss-2025-2026.png" medium="image"/>
+    <media:thumbnail url="https://blog.unhappychoice.com/images/ogp/2026-03-27-oss-2025-2026.png" width="1200" height="630"/>
+    <summary type="html">&lt;p&gt;今の無職期間に何をしているかまとめる。OSS を4つ作って合計約 6,000 star を獲得した。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</summary>
+    <content type="html">
+
+&lt;h2&gt;前回との違い&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="../../../2025/08/09/things-i-did-in-previous-career-break.html"&gt;前回&lt;/a&gt;は Minecraft の動画を作っていた。今回は OSS に全振りしている。&lt;/p&gt;
+
+&lt;h2&gt;作ったもの&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;プロジェクト&lt;/th&gt;
+&lt;th&gt;Stars&lt;/th&gt;
+&lt;th&gt;概要&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/unhappychoice/gitlogue"&gt;gitlogue&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;~4,400&lt;/td&gt;
+&lt;td&gt;Git 履歴をターミナルで映画風にリプレイ&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/unhappychoice/gittype"&gt;gittype&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;~1,000&lt;/td&gt;
+&lt;td&gt;自分のコードでタイピング練習&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/unhappychoice/mdts"&gt;mdts&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;~160&lt;/td&gt;
+&lt;td&gt;ゼロ設定 Markdown プレビューサーバー&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/unhappychoice/steamfetch"&gt;steamfetch&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;~150&lt;/td&gt;
+&lt;td&gt;neofetch の Steam 版&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;意識していたことを3つまとめる。&lt;/p&gt;
+
+&lt;h2&gt;1. 発明する / この世に無い価値を生み出す&lt;/h2&gt;
+
+&lt;p&gt;この世にすでにある価値なら作らない。ごく小さい差分しかないなら、既存のプロジェクトに貢献した方が良い。アイデアは日々湧くが、それが発明になるように、あらゆる方法で検索・調査し、掛け合わせなどで育てていく。&lt;/p&gt;
+
+&lt;h3&gt;gitlogue&lt;/h3&gt;
+
+&lt;p&gt;TUI スクリーンセーバー&lt;sup id="fnref1"&gt;&lt;a href="#fn1"&gt;1&lt;/a&gt;&lt;/sup&gt;の存在を見て、ターミナル上でアニメーションするものを作りたいと思った。ただ自分にはアニメーションを0から作る技術が無いので、既存のデータを活用できないかと考えた。Git のデータを掛け合わせて、仮想のエディタ上で操作をリプレイするツールを思いついた。&lt;/p&gt;
+
+&lt;p&gt;調査するうち、独自性が強いように思えたので、作る前の自信につながった。&lt;/p&gt;
+
+&lt;h3&gt;gittype&lt;/h3&gt;
+
+&lt;p&gt;昔から &lt;a href="https://typing.io"&gt;typing.io&lt;/a&gt; を利用していたが、固定のコードしかタイピングできないため、ずっと解決したかった。固定のキーワードを &lt;a href="https://monkeytype.com"&gt;monkeytype&lt;/a&gt;&lt;sup id="fnref2"&gt;&lt;a href="#fn2"&gt;2&lt;/a&gt;&lt;/sup&gt; 方式でこなすものは沢山あったが、そうではないと思っていた。&lt;/p&gt;
+
+&lt;p&gt;アイデアとしてはその時点で独自性を確信していたが、実装が難しいという問題があった。これは後述する。&lt;/p&gt;
+
+&lt;h3&gt;mdts&lt;/h3&gt;
+
+&lt;p&gt;Markdown を書くのはエディタで十分足りている。一方で、見るためだけのツールが欲しかった。既存のツールは読み書きが一体になっていて、それぞれが中途半端なエディタばかりだった。その課題感があったところに、&lt;a href="https://github.com/dalance/difit"&gt;difit&lt;/a&gt; の一発起動の体験を見て、これを Markdown プレビューに適用すれば発明になると思った。見ることだけに特化したプレビューサーバーを作った。&lt;/p&gt;
+
+&lt;h3&gt;steamfetch&lt;/h3&gt;
+
+&lt;p&gt;発明ではないし発想も単純だが、まだ世の中に無い穴だった。Reddit の &lt;a href="https://www.reddit.com/r/unixporn/"&gt;r/unixporn&lt;/a&gt; を日常的に見ていると、xxxfetch 系にトレンドがあることがわかる。&lt;a href="https://github.com/dylanaraps/neofetch"&gt;neofetch&lt;/a&gt; の Steam 版というコンセプトは明快で、作る前から需要が見えていた。&lt;/p&gt;
+
+&lt;h2&gt;2. UI/UX をサボらない&lt;/h2&gt;
+
+&lt;p&gt;エンジニアだからという理由で UI/UX の品質が低い状態に甘んじない。&lt;/p&gt;
+
+&lt;p&gt;自分にデザインの才能があるわけではない。ただ、低レベルな状態をエンジニアだから仕方ないと認知しないまま放置することは避ける。ターミナルツールであっても、アニメーションの滑らかさ、色使い、レイアウト、インタラクションは作り込める余地がある。&lt;/p&gt;
+
+&lt;p&gt;gittype はタイピング練習ツールとして &lt;a href="https://monkeytype.com"&gt;monkeytype&lt;/a&gt; を筆頭にクローンが無限に作られていて、コーディング向けにシンタックスハイライト付きのものもある。ただ、どれも UI/UX が似たり寄ったりだった。&lt;a href="https://tree-sitter.github.io/tree-sitter/"&gt;Tree-sitter&lt;/a&gt; でソースコードをパースして関数を抽出し、TUI の画面遷移を大量に作り、Rust でパフォーマンスを詰めた。AI がなければ妥当な工数では作れなかった。&lt;/p&gt;
+
+&lt;p&gt;mdts はカラーテーマを選べるようにし、&lt;a href="https://mermaid.js.org/"&gt;mermaid&lt;/a&gt; を含む主要な Markdown 拡張を手を抜かずサポートした。見るだけのツールだからこそ、見る体験に妥協しない。&lt;/p&gt;
+
+&lt;h2&gt;3. マーケも含めて設計する&lt;/h2&gt;
+
+&lt;p&gt;README に GIF や画像を用意するのは当然として、それで一発で価値が伝わるようなプロダクトにする。そこまで含めて設計する。&lt;/p&gt;
+
+&lt;p&gt;作り始める前に、他の人が使うインパクトがあるかを考える。自分が見かけたら試すか。類似ツールの焼き直しに見えないか。使ってメリットがあるか。ここで引っかからなければ、そもそも作らない。&lt;/p&gt;
+
+&lt;p&gt;全てグローバル前提で、日本語は使わない。AI 時代ならグローバルを狙わない意味はない。&lt;/p&gt;
+
+&lt;h3&gt;gittype&lt;/h3&gt;
+
+&lt;p&gt;Reddit と Show HN&lt;sup id="fnref3"&gt;&lt;a href="#fn3"&gt;3&lt;/a&gt;&lt;/sup&gt; に出した。&lt;a href="https://www.reddit.com/r/typing/"&gt;r/typing&lt;/a&gt;, &lt;a href="https://www.reddit.com/r/commandline/"&gt;r/commandline&lt;/a&gt;, &lt;a href="https://www.reddit.com/r/rust/"&gt;r/rust&lt;/a&gt; などいろんなところに出して、r/typing が一番伸びた。&lt;a href="https://terminaltrove.com/"&gt;Terminal Trove&lt;/a&gt;&lt;sup id="fnref4"&gt;&lt;a href="#fn4"&gt;4&lt;/a&gt;&lt;/sup&gt; にはあとから自分で投稿した。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/ratatui/ratatui"&gt;ratatui&lt;/a&gt;&lt;sup id="fnref5"&gt;&lt;a href="#fn5"&gt;5&lt;/a&gt;&lt;/sup&gt; の作者が X でシェアしてくれた。ratatui 製のツールが出ると作者が積極的にシェアしてくれる文化がある。&lt;/p&gt;
+
+&lt;h3&gt;gitlogue&lt;/h3&gt;
+
+&lt;p&gt;同様に Reddit と Show HN に出した。Terminal Trove では Tool of the Week に選ばれたが、自分で投稿したわけではなく、誰かが推薦したか中の人が見つけてくれた。&lt;a href="https://news.ycombinator.com/"&gt;Hacker News&lt;/a&gt; のフロントページに載り&lt;sup id="fnref6"&gt;&lt;a href="#fn6"&gt;6&lt;/a&gt;&lt;/sup&gt;、一晩で 2,000 star を超えた。&lt;/p&gt;
+
+&lt;p&gt;ratatui の作者がこちらもシェアしてくれた。&lt;/p&gt;
+
+&lt;h3&gt;steamfetch&lt;/h3&gt;
+
+&lt;p&gt;ターゲットが明確なので、&lt;a href="https://www.reddit.com/r/linux_gaming/"&gt;r/linux_gaming&lt;/a&gt; に刺さった。&lt;/p&gt;
+
+&lt;h2&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;AI 時代はプロダクトを作ること自体の難易度が下がっていく。そのため、新しい価値の創造、非機能要件へのこだわり、マーケティングなどの開発以外の行動がより重要になっていくと思う。&lt;/p&gt;
+
+&lt;p&gt;世の中にまだない便利なものの空間は無限に広いので、これからも頑張っていきたい。&lt;/p&gt;
+
+&lt;div class="footnotes"&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+
+&lt;li id="fn1"&gt;
+&lt;p&gt;&lt;a href="https://github.com/cmatsuoka/asciiquarium"&gt;asciiquarium&lt;/a&gt;, &lt;a href="https://github.com/pipeseroni/pipes.sh"&gt;pipes.sh&lt;/a&gt;, &lt;a href="https://github.com/abishekvashok/cmatrix"&gt;cmatrix&lt;/a&gt; など。 &lt;a href="#fnref1"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id="fn2"&gt;
+&lt;p&gt;Web ベースのタイピング練習サイト。オープンソースで、多数のクローンやフォークが存在する。 &lt;a href="#fnref2"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id="fn3"&gt;
+&lt;p&gt;Hacker News の Show HN は、自分が作ったものを投稿するセクション。 &lt;a href="#fnref3"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id="fn4"&gt;
+&lt;p&gt;ターミナルツール専門のキュレーションサイト。投稿するとニュースレターや SNS で紹介される。 &lt;a href="#fnref4"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id="fn5"&gt;
+&lt;p&gt;Rust 製の TUI フレームワーク。tui-rs のフォークとして始まり、現在はターミナルアプリケーション開発のデファクトスタンダードになりつつある。 &lt;a href="#fnref5"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li id="fn6"&gt;
+&lt;p&gt;Hacker News にはセカンドチャンスプールという仕組みがあり、初回で伸びなかった投稿がモデレーターによって再浮上させられることがある。 &lt;a href="#fnref6"&gt;↩&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;/ol&gt;
+&lt;/div&gt;
+</content>
+  </entry>
   <entry>
     <title>AIセントラルな組織設計（4） - 資本主義的必然性</title>
     <link rel="alternate" href="https://blog.unhappychoice.com/2025/08/31/ai-centric-organization-4.html"/>
@@ -2238,139 +2390,6 @@ FPGAはあまり触ったことがない。&lt;/p&gt;
 &lt;h2&gt;強電&lt;/h2&gt;
 
 &lt;p&gt;地味に電気主任技術者3種を持っている。2種も勉強したが受けてないだけ（記述以外簡単だし受かるっしょ、という感覚だったと思う）なので当時は相当の知識は持ってたはず。311以前は東京電力に就職しようと本気で思っていた。5万ボルトまではまかせろー（ﾋﾞﾘﾋﾞﾘ。&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>知っていること / 知らないこと - コンピュータサイエンス</title>
-    <link rel="alternate" href="https://blog.unhappychoice.com/2019/04/30/what-i-know-cs.html"/>
-    <id>https://blog.unhappychoice.com/2019/04/30/what-i-know-cs.html</id>
-    <published>2019-04-30T00:00:00+09:00</published>
-    <updated>2019-04-30T00:00:00+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <media:content url="https://blog.unhappychoice.com/images/ogp/2019-04-30-what-i-know-cs.png" medium="image"/>
-    <media:thumbnail url="https://blog.unhappychoice.com/images/ogp/2019-04-30-what-i-know-cs.png" width="1200" height="630"/>
-    <summary type="html">&lt;p&gt;コンピュータサイエンス周りのトピックについて&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</summary>
-    <content type="html">
-
-&lt;p&gt;大学 (卒業はしていない) では電子工学科だったため、全般的に得意という意識があまりない。
-分野は &lt;a href="https://ja.wikipedia.org/wiki/%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%A6"&gt;計算機科学 - Wikipedia&lt;/a&gt; を参考に、一部は数学のページへ。&lt;/p&gt;
-
-&lt;h2&gt;基礎&lt;/h2&gt;
-
-&lt;h3&gt;情報理論&lt;/h3&gt;
-
-&lt;p&gt;大学で少しやった気がする。エントロピーやシャノンの符号化定理等、一度理解はした気がするが、今説明せよと言われたら無理な程度。
-様々な圧縮アルゴリズムや、無線通信のベースになっていることは知っている。&lt;/p&gt;
-
-&lt;h3&gt;計算理論&lt;/h3&gt;
-
-&lt;h4&gt;計算可能性 / 複雑性&lt;/h4&gt;
-
-&lt;p&gt;計算量の &lt;code&gt;O(n)&lt;/code&gt; 表記はわかっていると思う。とはいっても実用上はループを何度回るかくらいにしか着目していない。
-そもそも実用上はIO処理をどうするかがボトルネックになるパターンが多いので、並列 / 非同期処理を考えることのほうが多い気がする。
-複雑性クラスに関しては、P≠NP予想がミレニアム懸賞問題にあることとその概要以外全然知らない。&lt;/p&gt;
-
-&lt;h4&gt;チューリングマシン&lt;/h4&gt;
-
-&lt;p&gt;チューリングマシンやオートマトンに関しては存在は知っているにしても、理論的に理解しているとは言い難い。
-チューリング完全かどうかの判定もできない。&lt;/p&gt;
-
-&lt;h4&gt;ラムダ計算&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href="https://www.amazon.co.jp/%E3%82%A2%E3%83%B3%E3%83%80%E3%83%BC%E3%82%B9%E3%82%BF%E3%83%B3%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0-%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%86%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3-%E2%80%95%E5%8D%98%E7%B4%94%E3%81%AA%E6%A9%9F%E6%A2%B0%E3%81%8B%E3%82%89%E4%B8%8D%E5%8F%AF%E8%83%BD%E3%81%AA%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%A0%E3%81%BE%E3%81%A7-Tom-Stuart/dp/487311697X"&gt;アンダースタンディングコンピューテーション&lt;/a&gt; 等を読んでちょっとわかったつもりになっている。
-データ自体やその構造もこれで表現できることや、再帰はYコンビネーターを利用することを知っている。が、1から説明せよと言われると難しい。
-LISPを実装すれば体で理解できると思っているが、実装したことはない。&lt;/p&gt;
-
-&lt;h4&gt;アルゴリズム解析&lt;/h4&gt;
-
-&lt;p&gt;そういう研究分野があることをいま知った。全然知らない。&lt;/p&gt;
-
-&lt;h3&gt;データ構造&lt;/h3&gt;
-
-&lt;p&gt;各種リスト、ハッシュ、セットや木は知っている。実装せよと言われると危ういかもしれない。
-InnoDB の Index は B-tree だということや、Javaにはデフォルトで様々なコレクションが用意されていることを知っている。
-が、計算量と同様に普段着目するかというとそうでもなく、各言語で用意されてる実装をそのまま利用している。&lt;/p&gt;
-
-&lt;h3&gt;形式言語 / プログラム意味論&lt;/h3&gt;
-
-&lt;p&gt;全然知らない。&lt;/p&gt;
-
-&lt;h3&gt;数値解析&lt;/h3&gt;
-
-&lt;p&gt;数値解析の基本的なアルゴリズムは大学でやったように思う。ググらないと実装はできない。&lt;/p&gt;
-
-&lt;h3&gt;最適化問題&lt;/h3&gt;
-
-&lt;p&gt;あまり知らない。巡回セールスマンやナップサック問題があって様々なアルゴリズムがあるくらいの認識。&lt;/p&gt;
-
-&lt;h2&gt;実装&lt;/h2&gt;
-
-&lt;h3&gt;コンパイラ / インタプリタ&lt;/h3&gt;
-
-&lt;p&gt;自分で実装したことはない。一般的なコンパイラが何をしているかについては理解していると思う。
-Ruby / Swift / Scala / Kotlin / Go 辺りのソースは眺めたことはあるが、本当に眺めた程度。&lt;/p&gt;
-
-&lt;h3&gt;分散コンピューティング&lt;/h3&gt;
-
-&lt;p&gt;理論的なところは全然知らない。実務でやったこともない。&lt;/p&gt;
-
-&lt;h3&gt;並列 / 並行コンピューティング&lt;/h3&gt;
-
-&lt;p&gt;理論的なところは全然知らないと思う。アムダールの法則は知っている。
-実装に近いところで言えば、プロセス / スレッド / ファイバー のモデルは知っていると思う。と同時に、ロックの概念も一通り知っていると思う。
-が、実際に実装で問題を起こさないかとは別ではある。
-使ったことのあるフレームワークや言語に関しては、それがどのような実装なのかをなんとなく理解していると思っている。&lt;/p&gt;
-
-&lt;h3&gt;ソフトウェア工学&lt;/h3&gt;
-
-&lt;h4&gt;開発方法&lt;/h4&gt;
-
-&lt;p&gt;ウォーターフォール / アジャイル / DDD / TDD 等の関連の書籍は何冊か読んだ。
-どれが良いというわけではなく、組織やソフトウェアの要件に関してはそれぞれのプラクティスの要素を最適に組み合わせることで、最善になると思っている。&lt;/p&gt;
-
-&lt;h3&gt;コンピュータ・アーキテクチャ&lt;/h3&gt;
-
-&lt;h4&gt;ハードウェア&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href="/2019/05/25/what-i-know-hardware.html"&gt;知っていること / 知らないこと - ハードウェア&lt;/a&gt; へ&lt;/p&gt;
-
-&lt;h4&gt;オペレーティングシステム&lt;/h4&gt;
-
-&lt;p&gt;Win / Mac / Ubuntu / CentOS 辺りは実際に使ったことがある / 一通りアプリケーション作るために必要な操作はできるといえる。
-Winに関しては内部構造全然知らずに使っていると思う。Unix / Linux に関しては構成要素や設計は一通り理解しているつもり。
-システムコールやAPIに関しては実用上必要なときに調べて利用する程度。&lt;/p&gt;
-
-&lt;h3&gt;ネットワーク&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href="https://www.amazon.co.jp/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E3%81%AF%E3%81%AA%E3%81%9C%E3%81%A4%E3%81%AA%E3%81%8C%E3%82%8B%E3%81%AE%E3%81%8B-%E7%AC%AC2%E7%89%88-%E7%9F%A5%E3%81%A3%E3%81%A6%E3%81%8A%E3%81%8D%E3%81%9F%E3%81%84TCP-IP%E3%80%81LAN%E3%80%81%E5%85%89%E3%83%95%E3%82%A1%E3%82%A4%E3%83%90%E3%81%AE%E5%9F%BA%E7%A4%8E%E7%9F%A5%E8%AD%98-%E6%88%B8%E6%A0%B9/dp/4822283119"&gt;ネットワークはなぜつながるのか&lt;/a&gt; 読んだかつプラスアルファの知識くらい。
-OSI参照モデルのトランスポート層より下は多分全然わかってない。
-TCP/IP の主要なプロトコルは大体知っている、使ったことがある。トラブルが発生した際に &lt;code&gt;ping&lt;/code&gt; や &lt;code&gt;ifconfig&lt;/code&gt; &lt;code&gt;traceroute&lt;/code&gt; 等して原因を調べることはできるはず。  &lt;/p&gt;
-
-&lt;h3&gt;暗号理論&lt;/h3&gt;
-
-&lt;p&gt;公開鍵方式、特にRSAに関していえば知っているといえる。その他の理論の部分は全然知らない。
-単純な置換によるものは頻度分析で解けることや、エニグマ周りの歴史的経緯等は聞いた/見たことがある。&lt;/p&gt;
-
-&lt;h3&gt;データベース&lt;/h3&gt;
-
-&lt;p&gt;実務の経験から、ACID特性やトランザクション、悲観 / 楽観ロックの概念は知っているかつ利用したことがある。
-リレーショナルデータベースに関しては各種正規系や主キー / 外部キーに関して理解していると思う。
-その他実装面だと、MySQL / Postgres / SQLite / Redis / DynamoDB / Redshift 辺りは実務で触っているので大まかな特性はだいたい理解していると思う。&lt;/p&gt;
-
-&lt;h3&gt;コンピュータグラフィックス&lt;/h3&gt;
-
-&lt;p&gt;大学在籍中は一応画像処理の研究室だったので、一通りのトピックに関して調べて理解した気がする。
-Minecraft 等の影響で shader 技術だったりも自分で調べたりはしていた。が、あまりアウトプットしていたわけじゃないので、実力はないに等しい。&lt;/p&gt;
-
-&lt;h3&gt;機械学習 / データマイニング&lt;/h3&gt;
-
-&lt;p&gt;使われてる単語は一通りググって理解していると思う。ディープラーニングが出てきたのが大学在籍中であったと思い、当時論文も何本か読んだと思うが覚えているかというとそうではないのはもちろんである。
-求める出力に対して pros/cons ある様々な手法が存在するというか、人間の主観によりがちな俗っぽい分野だと思っていて、そもそもあまり好きではないかもしれない。
-特に今は過渡期だと思っていて、体系だってきてからしっかり学びたいとは思っている (願望) 。&lt;/p&gt;
 </content>
   </entry>
 </feed>
