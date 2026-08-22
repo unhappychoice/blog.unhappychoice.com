@@ -5,10 +5,227 @@
   <id>https://blog.unhappychoice.com</id>
   <link href="https://blog.unhappychoice.com"/>
   <link href="https://blog.unhappychoice.com/feed.xml" rel="self"/>
-  <updated>2026-07-16T00:00:00+09:00</updated>
+  <updated>2026-08-04T00:00:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>全員 8 割が最低ライン ― かなづち使えない棟梁問題</title>
+    <link rel="alternate" href="https://blog.unhappychoice.com/2026/08/04/full-stack-8-of-10.html"/>
+    <id>https://blog.unhappychoice.com/2026/08/04/full-stack-8-of-10.html</id>
+    <published>2026-08-04T00:00:00+09:00</published>
+    <updated>2026-08-04T00:00:00+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <media:content url="https://blog.unhappychoice.com/images/ogp/2026-08-04-full-stack-8-of-10.png" medium="image"/>
+    <media:thumbnail url="https://blog.unhappychoice.com/images/ogp/2026-08-04-full-stack-8-of-10.png" width="1200" height="630"/>
+    <summary type="html">&lt;p&gt;「フルスタックエンジニア」という言葉が流行っては廃れる、を繰り返している。
+全部書ける人が偉い、という話ではないが、「私はフロントだけです」で済むかというと、たぶん済まない。&lt;/p&gt;
+
+&lt;p&gt;エンジニアと作業者を分けているのは担当範囲ではなく、問題を最初から最後まで見通せるかどうかだ。
+そういう人を育てるには、全員が全領域を 8 割わかっている状態を最低ラインに置くしかない、というのがこの記事の話だ。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</summary>
+    <content type="html">
+
+&lt;h2&gt;エンジニアかどうかは、担当範囲では決まらない&lt;/h2&gt;
+
+&lt;p&gt;エンジニアと作業者の線引きを、担当技術やポジションでやろうとすると、たいてい失敗する。
+フロントエンジニア、バックエンドエンジニア、インフラエンジニア、といった分類は、扱う技術の話をしているだけだ。
+その人がエンジニアなのかどうかの判定にはなっていない。&lt;/p&gt;
+
+&lt;p&gt;もう少し実態に近い線引きは、扱う問題の抽象レイヤを上下に自由に移動できるかどうか、で切ることだ。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;エンジニア
+
+&lt;ul&gt;
+&lt;li&gt;顧客の状況、事業の狙い、システムの制約、実装の詳細、運用の実情までを繋いで見て、その全部に噛み合う解を作れる人&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;作業者
+
+&lt;ul&gt;
+&lt;li&gt;与えられた局所仕様を、その背景を問うことなく実装する人&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;この線引きだと、フロント専業でも、顧客の行動、API の設計、状態管理、計測、運用まで読めるならエンジニアだ。
+逆にバックエンドもインフラも触れる人でも、事業や顧客と切れているなら作業者になる。
+担当技術は、実は関係ない。&lt;/p&gt;
+
+&lt;p&gt;なぜこの線引きにこだわるかというと、局所解を積み上げただけでは、プロダクトとしては噛み合わないことが多いからだ。
+バックエンドだけ、フロントだけ、インフラだけ、データだけ、と切ると、そのレイヤ内では綺麗に見えても、ユーザー体験、事業制約、運用負荷、開発速度との接続が切れる。&lt;/p&gt;
+
+&lt;p&gt;プロダクトの品質は、全レイヤの制約を同時に満たす近似解が出せているかで決まる。
+視野が狭いと、そもそも最適化する対象を間違えやすい。
+担当だけを完璧にやっても、プロダクトとして噛み合わなければ、そのぶんの成果は目減りしてしまう。&lt;/p&gt;
+
+&lt;h2&gt;「LLM がいるから書けなくていい」は、かなづち使えない棟梁と同じ&lt;/h2&gt;
+
+&lt;p&gt;「LLM が実装をやってくれる時代なんだから、もう自分では書けなくていい」という論が最近よく出る。
+気持ちはわかるが、これは棟梁が「もうかなづちは使えなくていい」と言っているのと構造が同じだ。&lt;/p&gt;
+
+&lt;p&gt;棟梁がかなづちを「振らないこと」と「使えないこと」は、まったく違う。&lt;/p&gt;
+
+&lt;p&gt;振らない棟梁は、自分で家を建てはしない。
+だが、どこが難しいかも、どのくらい時間がかかるかも、どこで手を抜けば後で崩れるかも、身体でわかっている。
+だから設計判断ができるし、職人にどこまで任せて良いかも判断できる。&lt;/p&gt;
+
+&lt;p&gt;かなづちを振ったことがない棟梁は、これができにくい。
+設計が現場で通らなかったり、見積もりが実態から乖離したりしがちで、任せる相手の見極めも難しくなる。
+結果として、判断が上滑りしやすくなる。&lt;/p&gt;
+
+&lt;p&gt;ソフトウェアでも同じことが起きる。
+実装ができないまま設計判断だけをやると、こうなる。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;仕様の乖離
+
+&lt;ul&gt;
+&lt;li&gt;作れないものを作れと言い出す&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;部分は動くが全体は壊れる
+
+&lt;ul&gt;
+&lt;li&gt;局所的には動くが、システム全体としては崩壊している&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;本質と慣習の混同
+
+&lt;ul&gt;
+&lt;li&gt;何が本質的な制約で、何がただの慣習なのかの区別がつかない&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;LLM 出力の評価不能
+
+&lt;ul&gt;
+&lt;li&gt;LLM が出してきたコードが良いのか悪いのかを判断できない&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;LLM が実装を代わりにやってくれる時代でも、「書ける」は最低ラインで、「構造を見て判断できる」がその上に乗る本体だ、というのはこの意味で成り立つ。
+書けない棟梁が、ハンマーの代わりに LLM を持っただけでは、判断精度は上がらない。
+判断のための身体感覚は、自分で書いてしか身につかない。&lt;/p&gt;
+
+&lt;h2&gt;全員が全領域を 8 割わかっていて、自分の中核だけ突き抜けている&lt;/h2&gt;
+
+&lt;p&gt;以上を踏まえて、じゃあどういうチームなら成立するのか、を書く。
+結論を先に置くと、こういう状態が理想になる。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;全員が、プロダクトに関わる全領域を「実務判断に使えるレベル」で理解している。その上で、自分の中核領域だけは、周囲に対して圧倒的に深い。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;「実務判断に使えるレベル」の中身は、次の領域を、会話でわかったフリをするのではなく、自分の判断根拠として使える、という意味だ。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;顧客と業務&lt;/li&gt;
+&lt;li&gt;市場と競合&lt;/li&gt;
+&lt;li&gt;UI と UX&lt;/li&gt;
+&lt;li&gt;データと計測&lt;/li&gt;
+&lt;li&gt;実装と設計&lt;/li&gt;
+&lt;li&gt;インフラと運用&lt;/li&gt;
+&lt;li&gt;セキュリティ&lt;/li&gt;
+&lt;li&gt;法務・コンプライアンス&lt;/li&gt;
+&lt;li&gt;収益構造&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ここが 8 割ある、というのが最低ラインになる。&lt;/p&gt;
+
+&lt;p&gt;その上で、自分の役割に応じた中核領域だけ、突き抜けて深い。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;エンジニアなら
+
+&lt;ul&gt;
+&lt;li&gt;実装・設計・DB・インフラ・監視・性能・データ・UX・ドメイン理解・顧客理解あたりが、一つのまとまった塊として深い&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;デザイナーなら
+
+&lt;ul&gt;
+&lt;li&gt;体験設計まわりの塊が深い&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;事業側なら
+
+&lt;ul&gt;
+&lt;li&gt;市場と顧客と収益の塊が深い&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;大事なのは、この「深い部分」が単発のスキルの尖りではなく、関連する領域がまとまった塊として深いことだ。
+よく言われる T 字型（一つだけ深い）では、実は足りない。
+もっと山脈のような、隣接する領域がひと繋がりで盛り上がっている形が要る。&lt;/p&gt;
+
+&lt;p&gt;この状態になっていると、チーム内の会話が「相手にゼロから説明する場」ではなく「差分だけ同期する場」になる。
+それぞれが全体を持っているので、通訳が要らない。&lt;/p&gt;
+
+&lt;p&gt;逆に、各人が 3 割ずつしか持っていない島同士だと、毎回プロトコル変換が必要になる。
+組織全体が、細い口頭パイプで繋がる低帯域バスになる。&lt;/p&gt;
+
+&lt;p&gt;フロントに座る PdM を「情報の窓口」として細い帯域で叩き続けている状態は、その典型だ。
+分業ではなく、本来自分で取りに行くべき情報を、他人経由で受け取ろうとしているだけの、情報の外注になっている。&lt;/p&gt;
+
+&lt;p&gt;「全部わかっていないといけない」は厳密には無限で無理だ。
+だが、「自分の出すものに影響する情報を、自分で取りに行く責任がある」の方は、かなり素直に成り立つ。
+ここを人任せにしてしまうと、実装者として部分問題だけを解いている状態に寄りやすい。
+オーバーヘッドではなく、出力の質のための必要条件と捉えた方がしっくり来る。&lt;/p&gt;
+
+&lt;h2&gt;「作業者でいる」は、実は自分を守っていない&lt;/h2&gt;
+
+&lt;p&gt;「そこまで責任を負いたくない」「担当範囲だけやりたい」という選択肢は、当然ある。
+ただ、それが自分を守るかというと、たぶん長期では守らない、というのがここまでの流れの帰結だ。&lt;/p&gt;
+
+&lt;p&gt;作業者のポジションを取ると、責任範囲は狭くできる。
+だが、そのぶん納得感・裁量・学習速度・市場価値も一緒に狭くなる。&lt;/p&gt;
+
+&lt;p&gt;短期的には「言われたことをやっただけです」で痛みを避けられる。
+だが、プロダクトが滑ったときの無力感は残るし、成果が出ても、それが自分の判断で勝ち取ったものにはならない。
+責任から逃げた分だけ、達成感も同じ量だけ逃げていく。&lt;/p&gt;
+
+&lt;p&gt;作業者でいるのは防具に見えるが、実際には視界を少し狭めている面もある。
+理解していない領域に依存しながら仕事をしている状態は、構造的にどうしても不安定になりやすい。
+不安の発生源に触れないことで、その場は落ち着くが、根元は残る、ということが起きがちだ。&lt;/p&gt;
+
+&lt;p&gt;とはいえ、人は安きに流れる。
+これは意志の弱さではなく、コスト構造の問題だ。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;全領域 8 割の維持
+
+&lt;ul&gt;
+&lt;li&gt;毎日コストが発生する。しかも見返りが見えにくい&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;担当だけやります
+
+&lt;ul&gt;
+&lt;li&gt;短期の見返りは、はるかに見えやすい&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;責任範囲の限定
+
+&lt;ul&gt;
+&lt;li&gt;「そこは PdM が」「そこはインフラが」と言えるので、心理的にも楽&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;ほうっておくと、意図的に逆らわない限り、人は作業者側に流れていく。&lt;/p&gt;
+
+&lt;hr&gt;
+
+&lt;p&gt;裏を返せば、意図的に逆らって、全領域 8 割の維持を続けられる人ほど、長期でエンジニアであり続けやすい。&lt;/p&gt;
+
+&lt;p&gt;プロダクト作りは総合格闘技に近い。
+派手な技術ではなく、地味な基礎練の積み重ねの方が、最終的には効いてくる。&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>口頭会議は縛りプレイである</title>
     <link rel="alternate" href="https://blog.unhappychoice.com/2026/07/16/meetings-are-shackled-play.html"/>
@@ -2403,125 +2620,6 @@ APIも特に追加料金必要ではなくで利用しようとしたら、該�
 &lt;ul&gt;
 &lt;li&gt;🎉　Created repository (06/03)&lt;/li&gt;
 &lt;/ul&gt;
-</content>
-  </entry>
-  <entry>
-    <title>知っていること / 知らないこと - 数学</title>
-    <link rel="alternate" href="https://blog.unhappychoice.com/2019/05/03/what-i-know-math.html"/>
-    <id>https://blog.unhappychoice.com/2019/05/03/what-i-know-math.html</id>
-    <published>2019-05-03T00:00:00+09:00</published>
-    <updated>2019-05-03T00:00:00+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <media:content url="https://blog.unhappychoice.com/images/ogp/2019-05-03-what-i-know-math.png" medium="image"/>
-    <media:thumbnail url="https://blog.unhappychoice.com/images/ogp/2019-05-03-what-i-know-math.png" width="1200" height="630"/>
-    <summary type="html">&lt;p&gt;基本的にぜんぜんわからない。数学的な問題を解くことは受験期から苦手意識がある。ぜんぜんわからないを減らしていきたい。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</summary>
-    <content type="html">
-
-&lt;h2&gt;数学基礎&lt;/h2&gt;
-
-&lt;h3&gt;集合論&lt;/h3&gt;
-
-&lt;p&gt;現在多くの議論はZFCを出発しているのは知っている。有名な定理、主な集合や写像、濃度の概念は理解しているはず。もちろん形式的に行間すべてを理解しているわけではない。&lt;/p&gt;
-
-&lt;h3&gt;モデル理論&lt;/h3&gt;
-
-&lt;p&gt;ぜんぜんわからない。&lt;/p&gt;
-
-&lt;h3&gt;再帰理論&lt;/h3&gt;
-
-&lt;p&gt;ぜんぜんわからない。&lt;/p&gt;
-
-&lt;h3&gt;証明論&lt;/h3&gt;
-
-&lt;p&gt;ぜんぜんわからない。 &lt;a href="https://ja.wikipedia.org/wiki/%E8%A8%BC%E6%98%8E%E8%AB%96"&gt;証明論 - Wikipedia&lt;/a&gt; を見ると&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;現代では、形式的証明は一般に計算機支援証明を補助としてコンピュータを使って構築される。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;の一文があって驚いた。&lt;/p&gt;
-
-&lt;h2&gt;解析&lt;/h2&gt;
-
-&lt;h3&gt;微積分&lt;/h3&gt;
-
-&lt;p&gt;大学で少しやったところで止まっている。ルベーグ積分や測度論の存在はしっているが、それ以上でも以下でもない。&lt;/p&gt;
-
-&lt;h3&gt;複素解析&lt;/h3&gt;
-
-&lt;p&gt;大学で電子回路の関連でちょっとやった程度。理論としては何もわかってないに等しい。&lt;/p&gt;
-
-&lt;h3&gt;関数解析&lt;/h3&gt;
-
-&lt;p&gt;ぜんぜんわからない。&lt;/p&gt;
-
-&lt;h3&gt;確率論&lt;/h3&gt;
-
-&lt;p&gt;ぜんぜんわからない。高校生レベルの知識。&lt;/p&gt;
-
-&lt;h3&gt;スペクトル理論&lt;/h3&gt;
-
-&lt;p&gt;ぜんぜんわからない。&lt;/p&gt;
-
-&lt;h2&gt;代数&lt;/h2&gt;
-
-&lt;h3&gt;数論&lt;/h3&gt;
-
-&lt;p&gt;正直高校までの知識しかない。ゼータ関数はすごいらしい。素数は宇宙の真理。&lt;/p&gt;
-
-&lt;h3&gt;線形代数&lt;/h3&gt;
-
-&lt;p&gt;大学の授業でやった。行列の範囲であれば基本は多分わかっている、実用もしていると思う。テンソルとかになってくるとわからない。&lt;/p&gt;
-
-&lt;h3&gt;群 / 環 / 体論&lt;/h3&gt;
-
-&lt;p&gt;それぞれの定義は知っているが、それくらい。勉強し始めたところ。&lt;/p&gt;
-
-&lt;h3&gt;圏論&lt;/h3&gt;
-
-&lt;p&gt;多分あまりわかっていない。 &lt;a href="https://github.com/kotlinz/kotlinz"&gt;kotlinz&lt;/a&gt; とか実装したし、 Haskell や &lt;a href="https://github.com/scalaz/scalaz"&gt;scalaz&lt;/a&gt; も使える / 実装を理解していると言っていいと思うが、理論としては全然わかってないように思う。 ベーシック圏論読んでないのできっちり読みたいところ。&lt;/p&gt;
-
-&lt;h2&gt;幾何&lt;/h2&gt;
-
-&lt;h3&gt;多様体&lt;/h3&gt;
-
-&lt;p&gt;ぜんぜんわからない。勉強したい。&lt;/p&gt;
-
-&lt;h3&gt;微分幾何&lt;/h3&gt;
-
-&lt;p&gt;ぜんぜんわからない。&lt;/p&gt;
-
-&lt;h3&gt;代数幾何&lt;/h3&gt;
-
-&lt;p&gt;ぜんぜんわからない。&lt;/p&gt;
-
-&lt;h3&gt;位相空間 / 位相幾何論&lt;/h3&gt;
-
-&lt;p&gt;ぜんぜんわからない。勉強し始めた。&lt;/p&gt;
-
-&lt;h2&gt;応用数学&lt;/h2&gt;
-
-&lt;h3&gt;組合せ論&lt;/h3&gt;
-
-&lt;p&gt;ぜんぜんわからない。&lt;/p&gt;
-
-&lt;h3&gt;グラフ理論&lt;/h3&gt;
-
-&lt;p&gt;ぜんぜんわからない。&lt;/p&gt;
-
-&lt;h3&gt;統計学&lt;/h3&gt;
-
-&lt;p&gt;各種統計量は知っている。分布に関しても知っている。
-回帰やクラスタリングについてはだいぶ怪しくて、各手法の説明を眺めたことはあれど、 pros / cons や適用範囲の違いは全然わかってない。&lt;/p&gt;
-
-&lt;h3&gt;経済学&lt;/h3&gt;
-
-&lt;p&gt;授業でマクロ / ミクロやった気がする。そもそも複雑系のモデルを作るのは人間には不可能な気がしているので、これは学問に値するのか？とクエスチョンマークついている。
-おもしろくないわけではない。&lt;/p&gt;
 </content>
   </entry>
 </feed>
